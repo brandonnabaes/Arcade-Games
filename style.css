@@ -1,0 +1,109 @@
+body {
+    color: white;
+    background: rgb(0, 0, 0);
+    background-image: url(../img/fondo1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 100px;
+}
+
+/*Menu*/
+
+.bg-dark{
+    margin-top: -80px;
+}
+
+.navbar{
+    background: black !important;
+}
+.nav-link{
+    color: white !important;
+}
+
+.navbar-toggler{
+    background: white !important;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+/*Incio*/
+.inicio{
+ 
+    text-align: center;
+}
+.inico h1{
+    font-size: 50px;
+}
+
+.inicio .grid-padre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+
+}
+
+@media (max-width:576px){
+    .inicio .grid-padre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.inicio .grid img{
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.inicio .grid img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.game{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.game img{
+    width: 60%;
+    display: none;
+}
+.iframe{
+    width: 100%;
+}
+@media (max-width:1024px){
+   .iframe{
+    display: none;
+   }
+
+   .game img{
+    width: 100%;
+    display: inline-block;
+   }
+
+}
+
+
+
+
+
+
+footer{
+    margin-top: 30px;
+}
+
+footer h1{
+
+    color: wheat;
+}

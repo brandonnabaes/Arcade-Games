@@ -1,0 +1,175 @@
+@import "variables";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    background: rgb(0, 0, 0);
+    background-image: url(../img/fondo1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 100px;
+}
+
+/*Menu*/
+
+.bg-dark {
+    margin-top: -80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: black !important;
+
+    .nav-link {
+        font-size: 20px;
+        color:$base-color!important;
+    }
+
+    .red{
+        color: red !important;
+    }
+
+    .yellow{
+        color: yellow !important;
+    }
+
+    .blue{
+        color: rgb(1, 111, 255) !important;
+    }
+
+    .nav-link{
+        margin: 0 7px;
+    }
+
+
+    .nav-link:hover {
+        color:$second-color!important;
+        transform: scale(1.2);
+        transition: all 500ms ease-out;
+    }
+
+    .navbar-toggler {
+        background: white !important;
+    }
+
+    .navbar-brand {
+        font-family: cursive;
+        color: rgb(132, 0, 255);
+        font-size: 30px;
+    }
+}
+
+
+
+
+/*Incio*/
+.inicio {
+
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .grid-padre {
+        margin: 30px;
+        @include display-grid;
+        gap: 2em;
+
+    }
+
+    .grid{
+        border-radius: 6px;
+
+    }
+
+    .grid img {
+        width: 350px;
+        height: 250px;
+        filter: blur(1px);
+        transition: all .7s ease-in-out;
+    }
+
+
+
+    .grid img:hover {
+        filter: blur(0);
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+       
+    }
+
+    @media (max-width:576px){
+        .grid-padre{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+
+    iframe{
+        width: 100%;
+    }
+
+    img {
+        width: 60%;
+        display: none;
+    }
+
+
+}
+
+@media (max-width:1024px) {
+    .game img {
+        width: 380px;
+        display: inline-block;
+
+    }
+    .game iframe {
+        display: none;
+
+     
+
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+
+    .h1-footer {
+        color: wheat;
+        font-size: 25px;
+    }
+
+    h2{
+        @extend .h1-footer;
+        font-size: 20px;
+    }
+}

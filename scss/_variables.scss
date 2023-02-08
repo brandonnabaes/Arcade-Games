@@ -1,0 +1,7 @@
+$base-color: #07b102;
+$second-color: #fcfcfc;
+
+@mixin display-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

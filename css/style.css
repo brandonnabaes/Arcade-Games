@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: rgb(0, 0, 0);
+  background-image: url(../img/creative-method-studios-sample1.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 100px;
+}
+
+/*Menu*/
+.bg-dark {
+  margin-top: -80px;
+}
+
+.letra {
+    background-color: rgba(0, 0, 0, 0.699);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: black !important;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  color: #07b102 !important;
+}
+.navbar .red {
+  color: red !important;
+}
+.navbar .yellow {
+  color: yellow !important;
+}
+.navbar .blue {
+  color: rgb(1, 111, 255) !important;
+}
+.navbar .nav-link {
+  margin: 0 7px;
+}
+.navbar .nav-link:hover {
+  color: #fcfcfc !important;
+  transform: scale(1.2);
+  transition: all 500ms ease-out;
+}
+.navbar .navbar-toggler {
+  background: white !important;
+}
+.navbar .navbar-brand {
+  font-family: cursive;
+  color: rgb(132, 0, 255);
+  font-size: 30px;
+}
+
+/*Incio*/
+.inicio {
+  text-align: center;
+}
+.inicio h1 {
+  font-size: 50px;
+}
+.inicio .grid-padre {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+.inicio .grid {
+  border-radius: 6px;
+}
+.inicio .grid img {
+  width: 350px;
+  height: 250px;
+  filter: blur(0px);
+  transition: all 0.7s ease-in-out;
+}
+.inicio .grid img:hover {
+  filter: blur(0);
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+@media (max-width: 576px) {
+  .inicio .grid-padre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.game iframe {
+  width: 100%;
+}
+.game img {
+  width: 60%;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .game img {
+    width: 380px;
+    display: inline-block;
+  }
+  .game iframe {
+    display: none;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .h1-footer, footer h2 {
+  color: wheat;
+  font-size: 25px;
+}
+footer h2 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
