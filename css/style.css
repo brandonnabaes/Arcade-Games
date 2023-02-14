@@ -7,31 +7,36 @@
 body {
   color: white;
   background: rgb(0, 0, 0);
-  background-image: url(../img/7520fcdbe640f05bf9fe50aa981de23b.gif);
+  background-image: url(../img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: 100px;
 }
 
+.logo3{
+  width: 100px; height: 100px;
+}
 /*Menu*/
 .bg-dark {
   margin-top: -80px;
 }
 
 .letra {
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.911);
     font-size: 30px;
     color: rgb(255, 255, 255);
-    border: 5px solid rgb(0, 0, 0);
-    border-radius: 30px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
     padding: 10px;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  background: black !important;
+  background: rgba(0, 0, 0, 0.911) !important;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
 }
 .navbar .nav-link {
   font-size: 20px;
@@ -80,16 +85,23 @@ body {
   border-radius: 6px;
 }
 .inicio .grid img {
-  width: 350px;
-  height: 250px;
+  background-color: rgba(0, 0, 0, 0.863);
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 0%;
+  width: 300px;
+  height: 200px;
   filter: blur(0px);
   transition: all 0.7s ease-in-out;
 }
 .inicio .grid img:hover {
   filter: blur(0);
-  -webkit-transform: rotateY(180deg);
+  -webkit-transform: scale(1.3);
   -webkit-transform-style: preserve-3d;
-  transform: rotateY(180deg);
+  transform: scale(1.3);
+  transition: 2s;
   transform-style: preserve-3d;
 }
 @media (max-width: 576px) {
